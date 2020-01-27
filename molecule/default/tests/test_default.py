@@ -46,7 +46,7 @@ def test_vim_file(host, file, content):
 
 @pytest.mark.parametrize('file, content', [
   ('/home/mary/.emacs.d/init.el',
-   'Load base configuration')
+   'package-initialize')
 ])
 def test_emacs_file(host, file, content):
     f = host.file(file)

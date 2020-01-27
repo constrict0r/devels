@@ -37,7 +37,7 @@
 
   - name: Verify emacs configured for mary.
     file:
-      path: /home/mary/.emacs.d/python.el
+      path: /home/mary/.emacs.d/config/python.el
 
   - name: Verify curl package installed.
     file:
