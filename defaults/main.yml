@@ -1,0 +1,27 @@
+---
+
+packages:
+ # Develpy packages.
+ - https://is.gd/VLI7mE
+
+packages_pip:
+ # Develpy pip packages.
+ - https://is.gd/VLI7mE
+
+user_skeleton:
+ - item_path: https://gitlab.com/constrict0r/home
+   item_expand: false
+
+user_tasks:
+ # Configure python virtualenv.
+ - item_path: https://is.gd/j6h79c
+   item_expand: false
+ # Configure direnv.
+ - item_path: https://is.gd/LVY8VC
+   item_expand: false
+ # Configure emacs - python.
+ - item_path: https://is.gd/cpnSLS
+   item_expand: false
+ # Configure poetry.
+ - item_path: https://is.gd/tlp0nu
+   item_expand: false

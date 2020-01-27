@@ -1,0 +1,5 @@
+
+License
+*******
+
+MIT. See the LICENSE file for more details.

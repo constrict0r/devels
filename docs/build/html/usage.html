@@ -1,0 +1,549 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Usage &mdash; devels 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Variables" href="variables.html" />
+    <link rel="prev" title="Description" href="description.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> devels
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="description.html">Description</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#developer">Developer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pytest">Pytest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pytest-with-virtualenv">Pytest with virtualenv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pytest-on-emacs">Pytest on Emacs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tox">Tox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tox-on-emacs">Tox on Emacs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#virtualenvs-on-emacs">Virtualenvs on Emacs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pdb-on-emacs">PDB on Emacs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#poetry">Poetry</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="format.html">YAML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="attributes.html">Attributes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility.html">Compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="links.html">Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uml.html">UML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="author.html">Author</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">devels</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>To install and execute:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ansible-galaxy install constrict0r.devels
+ansible localhost -m include_role -a <span class="nv">name</span><span class="o">=</span>constrict0r.devels -K
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Passing variables:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ansible localhost -m include_role -a <span class="nv">name</span><span class="o">=</span>constrict0r.devels -K <span class="se">\</span>
+    -e <span class="s2">&quot;{packages: [gedit, rolldice]}&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>To include the role on a playbook:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>- hosts: servers
+  roles:
+      - <span class="o">{</span>role: constrict0r.devels<span class="o">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>To include the role as dependency on another role:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>dependencies:
+  - role: constrict0r.devels
+    packages: <span class="o">[</span>gedit, rolldice<span class="o">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>To use the role from tasks:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>- name: Execute role task.
+  import_role:
+    name: constrict0r.devels
+  vars:
+    packages: <span class="o">[</span>gedit, rolldice<span class="o">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>To run tests:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> devels
+chmod +x testme.sh
+./testme.sh
+</pre></div>
+</div>
+<p>On some tests you may need to use <em>sudo</em> to succeed.</p>
+<div class="section" id="developer">
+<h2>Developer<a class="headerlink" href="#developer" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pytest">
+<h3>Pytest<a class="headerlink" href="#pytest" title="Permalink to this headline">¶</a></h3>
+<p>In order to run tests with pytest, execute the following steps:</p>
+<ul class="simple">
+<li><p>Inside your project’s root folder, create a <em>tests</em> directory:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> my-project
+mkdir tests
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Add your test file inside the <em>tests</em> folder, be sure to prefix it with the
+text <em>test_</em>, for example <em>test_my_test.py</em>.</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch tests/test_my_test.py
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Inside the test file add some test functions, each function name must be
+prefixed with the text <em>test_</em>:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>def tests_ok<span class="o">()</span>:
+    print<span class="o">(</span><span class="s1">&#39;ok&#39;</span><span class="o">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Call pytest using the command:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -m pytest tests/
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="pytest-with-virtualenv">
+<h3>Pytest with virtualenv<a class="headerlink" href="#pytest-with-virtualenv" title="Permalink to this headline">¶</a></h3>
+<p>If you want to use a <em>virtualenv</em> for running your tests, from a terminal:</p>
+<ul class="simple">
+<li><p>Activate the virtual enviroment:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> bin/activate
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Then run the tests:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -m pytest tests/
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="pytest-on-emacs">
+<h3>Pytest on Emacs<a class="headerlink" href="#pytest-on-emacs" title="Permalink to this headline">¶</a></h3>
+<p>On emacs, you can use the following keybindings:</p>
+<ul class="simple">
+<li><p>C-c C-c: Execute current script.</p></li>
+<li><p>C-c C-t: Execute pytest tests.</p></li>
+<li><p>M-x tox-run-current-test: Execute current tox test.</p></li>
+<li><p>M-x tox-run-current-class: Execute current tox test suite.</p></li>
+</ul>
+<p>For more keybinding available see the
+<a class="reference external" href="https://elpy.readthedocs.io/en/latest/">elpy documentation</a>.</p>
+</div>
+<div class="section" id="tox">
+<h3>Tox<a class="headerlink" href="#tox" title="Permalink to this headline">¶</a></h3>
+<p>In order to run tox, execute the following steps:</p>
+<ul class="simple">
+<li><p>Create a folder named <em>tests</em>.</p></li>
+<li><p>Add your tests to the created folder.</p></li>
+<li><p>On the root directory of your project, create a <em>tox.ini</em> file with the
+following contents:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>tox<span class="o">]</span>
+<span class="nv">skipsdist</span> <span class="o">=</span> True
+<span class="nv">envlist</span> <span class="o">=</span> py<span class="o">{</span><span class="m">35</span><span class="o">}</span>
+
+<span class="o">[</span>testenv<span class="o">]</span>
+<span class="nv">deps</span> <span class="o">=</span>
+  pytest
+<span class="nv">commands</span> <span class="o">=</span>
+  python3 -m pytest tests
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Finally call tox:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tox
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="tox-on-emacs">
+<h3>Tox on Emacs<a class="headerlink" href="#tox-on-emacs" title="Permalink to this headline">¶</a></h3>
+<p>To run tox form emacs, step over the name of a test function and execute the
+keybindings:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>M-x tox-current-test RET
+</pre></div>
+</div>
+</div>
+<div class="section" id="virtualenvs-on-emacs">
+<h3>Virtualenvs on Emacs<a class="headerlink" href="#virtualenvs-on-emacs" title="Permalink to this headline">¶</a></h3>
+<p>To make emacs automatically load a virtual enviroment when a file inside a
+project is edited, follow the steps:</p>
+<ul class="simple">
+<li><p>Create a virtual enviroment inside <em>·/.virtualenvs</em>, for example name it
+<em>my_virtualenv</em>:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -m venv ~/.virtualenvs/my_virtualenv
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Add a file named <em>.dir-locals.el</em> on the root directory of your project with
+the following content:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="p">;;</span> Directory Local Variables
+
+<span class="p">;;</span> Activate <span class="s1">&#39;my_virtualenv&#39;</span> virtual enviroment from emacs.
+<span class="o">((</span>nil . <span class="o">((</span>pyvenv-workon . <span class="s2">&quot;my_virtualenv&quot;</span><span class="o">))))</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Now if you open a file of your project the virtual enviroment <em>my_virtualenv</em>
+will be enabled automatically.</p>
+</div>
+<div class="section" id="pdb-on-emacs">
+<h3>PDB on Emacs<a class="headerlink" href="#pdb-on-emacs" title="Permalink to this headline">¶</a></h3>
+<p>In order to run <a class="reference external" href="https://docs.python.org/3/library/pdb.html">pdb</a> from emacs
+when using a virtual enviroment, execute the steps:</p>
+<ul class="simple">
+<li><p>Create your virtual enviroment:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -m venv ~/.virtualenvs/my_virtualenv
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Copy <strong>pdb3</strong> from the system path to the newly created virtual enviroment:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp /usr/bin/pdb3 ~/.virtualenvs/my_virtualenv/bin/pdb
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>Edit the file <em>~/.virtualenvs/my_virtualenv/bin/pdb</em> and change the first
+line from:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#! /usr/bin/python3.5</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>To:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#! /home/username/.virtualenvs/my_virtualenv/bin/python3</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>If you are developing a python package, inside emacs and on first editing,
+install your package running:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>M-x shell RET
+python setup.py install RET
+</pre></div>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li><p>You can now use the following keybindings:</p></li>
+</ul>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>- M-x pdb: Run PDB on a new window.
+- C-x: Set breakpoint on current line.
+- c: Run up to the breakpoint.
+- n: Next line.
+- s: Explore <span class="o">(</span>search<span class="o">)</span> functions on current line.
+- p: Watch a variable.
+- w: Print out the stack.
+- u: Go up on the stack.
+- d: Go down on the stack.
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="poetry">
+<h3>Poetry<a class="headerlink" href="#poetry" title="Permalink to this headline">¶</a></h3>
+<p>In order to use <a class="reference external" href="https://poetry.eustace.io/">poetry</a> you will need a
+<strong>pyproject.toml</strong> file similar to the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">tool</span><span class="o">.</span><span class="n">poetry</span><span class="p">]</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;my-project&quot;</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s2">&quot;0.1.0&quot;</span>
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;My description&quot;</span>
+<span class="n">authors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;username &lt;username@protonmail.com&gt;&quot;</span><span class="p">]</span>
+<span class="n">license</span><span class="o">=</span><span class="s2">&quot;MIT&quot;</span>
+
+<span class="n">readme</span> <span class="o">=</span> <span class="s2">&quot;README.rst&quot;</span>
+<span class="n">homepage</span><span class="o">=</span><span class="s2">&quot;https://gitlab.com/username/my-project&quot;</span>
+<span class="n">repository</span><span class="o">=</span><span class="s2">&quot;https://gitlab.com/username/my-project&quot;</span>
+<span class="n">documentation</span><span class="o">=</span><span class="s2">&quot;https://project.readthedocs.io&quot;</span>
+
+<span class="n">keywords</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;devel&quot;</span><span class="p">,</span> <span class="s2">&quot;tools&quot;</span><span class="p">]</span>
+<span class="n">classifiers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;Topic :: Software Development :: Devel Tools&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;License :: OSI Approved :: MIT License&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="p">[</span><span class="n">tool</span><span class="o">.</span><span class="n">poetry</span><span class="o">.</span><span class="n">dev</span><span class="o">-</span><span class="n">dependencies</span><span class="p">]</span>
+<span class="n">pytest</span> <span class="o">=</span> <span class="s2">&quot;^3.10&quot;</span>
+<span class="n">tox</span> <span class="o">=</span> <span class="s2">&quot;^3.14&quot;</span>
+
+<span class="p">[</span><span class="n">tool</span><span class="o">.</span><span class="n">poetry</span><span class="o">.</span><span class="n">dependencies</span><span class="p">]</span>
+<span class="n">click</span> <span class="o">=</span> <span class="s2">&quot;^7.0&quot;</span>
+<span class="n">python</span> <span class="o">=</span> <span class="s2">&quot;^3.7&quot;</span>
+
+<span class="p">[</span><span class="n">tool</span><span class="o">.</span><span class="n">poetry</span><span class="o">.</span><span class="n">scripts</span><span class="p">]</span>
+<span class="n">my</span><span class="o">-</span><span class="n">project</span> <span class="o">=</span> <span class="s2">&quot;my_project.cli:main&quot;</span>
+
+<span class="p">[</span><span class="n">tool</span><span class="o">.</span><span class="n">tox</span><span class="p">]</span>
+<span class="n">legacy_tox_ini</span><span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">[tox]</span>
+<span class="s2">skipsdist = True</span>
+<span class="s2">envlist = py{37}</span>
+
+<span class="s2">[testenv]</span>
+<span class="s2">deps =</span>
+<span class="s2">  poetry</span>
+<span class="s2">  pytest</span>
+<span class="s2">commands =</span>
+<span class="s2">  poetry install</span>
+<span class="s2">  pytest</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="p">[</span><span class="n">build</span><span class="o">-</span><span class="n">system</span><span class="p">]</span>
+<span class="n">requires</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;poetry&gt;=0.12&quot;</span><span class="p">]</span>
+<span class="n">build</span><span class="o">-</span><span class="n">backend</span> <span class="o">=</span> <span class="s2">&quot;poetry.masonry.api&quot;</span>
+</pre></div>
+</div>
+<p>And then run <strong>poetry</strong> as a <strong>python3</strong> module:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">poetry</span> <span class="n">install</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="variables.html" class="btn btn-neutral float-right" title="Variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="description.html" class="btn btn-neutral float-left" title="Description" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, constrict0r
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
