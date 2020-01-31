@@ -3,10 +3,18 @@
 packages:
  # Develpy packages.
  - https://is.gd/VLI7mE
+ # Develmicro packages.
+ - https://is.gd/0d534I
 
 packages_pip:
  # Develpy pip packages.
  - https://is.gd/VLI7mE
+ # Develmicro pip packages.
+ - https://is.gd/0d534I
+
+group:
+ # Develmicro groups.
+ - https://is.gd/0d534I
 
 user_skeleton:
  - item_path: https://gitlab.com/constrict0r/home
@@ -24,4 +32,7 @@ user_tasks:
    item_expand: false
  # Configure poetry.
  - item_path: https://is.gd/tlp0nu
+   item_expand: false
+ # Configure emacs - microcontroller.
+ - item_path: https://is.gd/zJokxV
    item_expand: false

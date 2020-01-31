@@ -47,6 +47,10 @@ By default this role applies the following configuration:
 
  .. include:: parts/packages/dev_python.inc
 
+- Installs the microcontroller developer software:
+
+ .. include:: parts/packages/dev_micro.inc
+
 - Configures the base software:
 
  .. include:: parts/configured/base.inc
@@ -58,6 +62,10 @@ By default this role applies the following configuration:
 - Configures the python developer software:
 
  .. include:: parts/configured/dev_python.inc
+
+- Configures the microcontroller developer software:
+
+ .. include:: parts/configured/dev_micro.inc
 
 - Creates the following home directory layout:
 

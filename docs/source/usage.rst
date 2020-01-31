@@ -9,3 +9,5 @@ Developer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: parts/usage/dev_python.inc
+
+.. include:: parts/usage/dev_micro.inc

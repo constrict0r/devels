@@ -126,6 +126,32 @@ By default this role applies the following configuration:
 
       * yapf
 
+* Installs the microcontroller developer software:
+
+..
+
+   * Via apt:
+
+   ..
+
+      * clang
+
+      * fritzing
+
+      * fritzing-data
+
+      * fritzing-parts
+
+      * python3
+
+      * python3-pip
+
+   * Via pip:
+
+   ..
+
+      * platformio
+
 * Configures the base software:
 
 ..
@@ -217,6 +243,33 @@ By default this role applies the following configuration:
    ..
 
       * Enable elpy virtual enviroments on the *~/.bashrc* file.
+
+* Configures the microcontroller developer software:
+
+..
+
+   * emacs
+
+   ..
+
+      * Set `platformio plugin <https://is.gd/8HIcsb>`_ plugin.
+
+      * Set keybindings:
+
+      ..
+
+         * C-c i b: Build the project without auto-uploading.
+
+         * C-c i c: Clean compiled objects.
+
+         * C-c i u: Build and upload.
+
+   * groups - Adds users to the groups:
+
+      * dialout.
+
+   * udev - Adds the rules file
+      */etc/udev/rules.d/99-platformio-udev.rules*.
 
 * Creates the following home directory layout:
 

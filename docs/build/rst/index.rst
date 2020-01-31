@@ -49,6 +49,7 @@ Contents
       * `Virtualenvs on Emacs <#virtualenvs-on-emacs>`_
       * `PDB on Emacs <#pdb-on-emacs>`_
       * `Poetry <#poetry>`_
+      * `Platformio and Emacs <#platformio-and-emacs>`_
 * `Variables <#Variables>`_
    * `expand <#expand>`_
    * `group <#group>`_
