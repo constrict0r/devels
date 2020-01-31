@@ -35,9 +35,14 @@
     vars:
       users: [mary]
 
-  - name: Verify emacs configured for mary.
+  - name: Verify emacs python configured for mary.
     file:
       path: /home/mary/.emacs.d/config/python.el
+
+  - name: Verify emacs micro configured for user mary.
+    file:
+      path: /home/mary/.emacs.d/config/micro.el
+    become: true
 
   - name: Verify curl package installed.
     file:
