@@ -1,0 +1,64 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+
+  pre_tasks:
+    - name: Setting up test environment.
+      debug:
+        msg:
+          - '==============================================================='
+          - 'Pre tasks'
+          - '==============================================================='
+
+    - name: Ensure Python requirements installed.
+      apt:
+        name:
+          - python
+          - python-pip
+          - python-setuptools
+          - python3-pip
+          - python3-setuptools
+        state: present
+      changed_when: false
+
+    - name: Ensure Pip requirements installed.
+      pip:
+        name:
+          - flake8
+          - requests
+      become: false
+      changed_when: false
+
+  roles:
+    - role: devels
+      users: mary
+
+  post_tasks:
+    - name: Run verification tests.
+      debug:
+        msg:
+          - '================================================================'
+          - 'Post tasks'
+          - '================================================================'
+
+    - name: Verify emacs python configured for mary.
+      file:
+        path: /home/mary/.emacs.d/config/python.el
+      changed_when: false
+
+    - name: Verify emacs micro configured for user mary.
+      file:
+        path: /home/mary/.emacs.d/config/micro.el
+      become: true
+      changed_when: false
+
+    - name: Verify curl package installed.
+      file:
+        path: /usr/bin/curl
+      changed_when: false
+
+    - name: Verify emacs package installed.
+      file:
+        path: /usr/bin/emacs
+      changed_when: false

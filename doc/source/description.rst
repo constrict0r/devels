@@ -1,5 +1,5 @@
 Description
-------------------------------------------------------------------------------
+--------------------------------------------------------------
 
 Ansible role to apply developer configuration.
 
@@ -37,35 +37,35 @@ By default this role applies the following configuration:
 
 - Installs the base software:
 
- .. include:: parts/packages/base.inc
+ .. include:: part/package/base.inc
 
 - Installs the base developer software:
 
- .. include:: parts/packages/dev_base.inc
+ .. include:: part/package/dev_base.inc
 
 - Installs the python developer software:
 
- .. include:: parts/packages/dev_python.inc
+ .. include:: part/package/dev_python.inc
 
 - Installs the microcontroller developer software:
 
- .. include:: parts/packages/dev_micro.inc
+ .. include:: part/package/dev_micro.inc
 
 - Configures the base software:
 
- .. include:: parts/configured/base.inc
+ .. include:: part/configured/base.inc
 
 - Configures the base developer software:
 
- .. include:: parts/configured/dev_base.inc
+ .. include:: part/configured/dev_base.inc
 
 - Configures the python developer software:
 
- .. include:: parts/configured/dev_python.inc
+ .. include:: part/configured/dev_python.inc
 
 - Configures the microcontroller developer software:
 
- .. include:: parts/configured/dev_micro.inc
+ .. include:: part/configured/dev_micro.inc
 
 - Creates the following home directory layout:
 
